@@ -1,0 +1,241 @@
+/* RESET CSS */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin:0;
+  padding:0;
+  border:0;
+  font-size:100%;
+  font:inherit;
+  vertical-align:baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display:block;
+}
+
+body {
+  line-height:1;
+}
+
+ul, ol {
+  list-style:none;
+}
+
+blockquote, q {
+  quotes:none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content:'';
+  content:none;
+}
+
+table {
+  border-collapse:collapse;
+  border-spacing:0;
+}
+/* STYLES */
+html {
+	font-size: 62.5%;
+}
+body {
+	
+	font-family: "Lato", sans-serif;
+	text-align: center;
+}
+
+
+.container {
+	max-width: 140em;
+	margin: 0 auto;
+	padding: 0 .5em;
+}
+.container-narrow {
+	max-width: 100em;
+	margin: 0 auto;
+	padding: 0 .5em;
+}
+img {
+	max-width: 100%;
+}
+.main-header h1 {
+	font-size: 3em;
+	text-transform: uppercase;
+	letter-spacing: .2em;
+	font-weight: bold;
+	border-bottom: .12em solid #000;
+	margin-bottom: 1.5em;
+	margin-top: 1em;
+}
+.main-header h2 {
+	font-size: 2.2em;
+	font-weight: bold;
+	margin-bottom: 1.5em;
+}
+.main-header a {
+	text-decoration: none;
+	color: inherit;
+	transition: color 0.5s linear;
+}
+.main-header a:hover {
+	color: gold;
+}
+.intro-text {
+	margin-bottom: 1.5em;
+	line-height: 2em;
+	font-size: 1.5em;
+}
+.about-us h1, .craft h1, .footer p {
+	padding: 1.5em;
+	margin-bottom: .5em;
+	font-size: 2.5em;
+	text-transform: uppercase;
+	letter-spacing: .2em;
+	background: #F3827E;
+	color: #fff;
+}
+.photo-item img {
+	transition: transform 0.5s linear;
+}
+.photo-item img:hover {
+	opacity: .4;
+	transform: scale(1.05);
+}
+.photo-item h3 {
+	font-size: 2em;
+	text-transform: uppercase;
+	letter-spacing: .2em;
+	margin: 1em 0;
+	font-weight: bold;
+}
+.craft {
+	margin-top: 3em;
+	margin-bottom: 3em;
+}
+.craft-photo {
+	margin-bottom: 3em;
+	margin-top: 1em;
+}
+.craft h1 {
+	background: #97C4DF;
+	margin-bottom: 1em;
+}
+.craft h4 {
+	font-size: 1.8em;
+	margin-top: 1.5em;
+	margin-bottom: 1em;
+	font-weight: bold;
+}
+.craft-text {
+	font-size: 1.5em;
+	line-height: 2em;
+}
+.button {
+	display: block;
+	width: 10em;
+	margin: 0 auto;
+	margin-top: 2em;
+	margin-bottom: 3em;
+	border: 1px solid #444;
+	padding: 10px;
+	border-radius: 50px;
+	text-decoration: none;
+	font-size: 1.5em;
+	text-align: center;
+	color: #000;
+	transition: all 0.5s linear;
+
+}
+.button:hover {
+	background: #444;
+	color: #fff;
+}
+.footer p {
+	background: #9AD8CB;
+	padding: 3em;
+	line-height: 2em;
+	font-size: 1em;
+}
+.footer p a {
+	text-decoration: none;
+	color: #666;
+}
+
+/* media queries */
+@media (min-width: 60em) {
+	body {
+		text-align: left;
+	}
+	.main-header h1 {
+		font-size: 4em;
+	}
+	.main-header h2 {
+		text-align: center;
+		font-size: 3.2em;
+	}
+	.main-header li {
+		float: left;
+		width: 48%;
+		margin-right: 4%;
+		margin-bottom: 5em;
+	}
+	.main-header li:last-child {
+		margin-right: 0;
+	}
+	.intro-text {
+		font-size: 1.8em;
+	}
+	.intro-container:after {
+        content:'';
+        display:block;
+        clear:both;
+      }
+      .about-us h1, .craft h1, .footer p {
+      	text-align: center;
+      }
+      .photo-item {
+      	float: left;
+      	width: 25%;
+      	margin-right: 12.5%;
+      	margin-top: 5em;
+      	margin-bottom: 5em;
+      	text-align: center;
+      }
+      .photo-item:last-child {
+      	margin-right: 0;
+      }
+      .photos-list:after {
+        content:'';
+        display:block;
+        clear:both;
+      }
+      .craft h1 {
+      	margin-bottom: 3.5em;
+      }
+      .craft h4 {
+      	font-size: 2.5em;
+      	margin-top: 1em;      	
+      }
+      .craft-text {
+      	font-size: 1.5em;
+      }
+      .button {
+      	margin-left: 0;
+      }
+      .craft-list li {
+      	float: left;
+      	width: 47%;
+      	margin-right: 6%;
+      	margin-bottom: 2.5em;
+      }
+      .craft-list li:last-child {
+      	margin-right: 0;
+      }
+      .craft-list:after {
+        content:'';
+        display:block;
+        clear:both;
+      }
+      .footer {
+      	font-size: 1.1em;
+      }
+}
